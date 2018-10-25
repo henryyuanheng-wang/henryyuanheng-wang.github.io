@@ -1,0 +1,246 @@
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 50%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.content {
+    max-width: 70%;
+    margin: auto;
+    background: white;
+    padding: 5px;
+}
+
+.tablecontent {
+    max-width: 85%;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 80%;
+}
+
+</style>
+
+<h1 align="center"> Pricing Strategy Comparison for New Construction Communities</h1>
+<div class="content">
+    <h3 align="left">Question: </h3>
+    <p>
+        <i>Should Zillow charge New Construction communities a flat price per Community or per Lead Received?</i>
+    </p>
+    <h3 align="left">Recommendations:</h3>
+    <ul>
+        <li>
+            From the provided market info and research data, <b><i>Charge per Lead Received</i></b> strategy brings more listings on the site and
+            generates more revenue in the long term, thus it's the optimal strategy under this scenario.
+        <br />&nbsp;</li>
+        <li>
+            To make the prediction model more robust and accurate, more granular communty data should be collected based on <b><i>location, seasons, price range, etc.</i></b> With more
+            data, we can even test the feasibility of mixture pricing model given different characteristics of each community.
+        <br />&nbsp;</li>
+        <li>
+            To account for the variability among communties and within communities, Zillow can consider constructing <b><i>price ladders</i></b> for each strategy. This can render more reasonable ROI
+            for the builders and attract more communities to put listings on Zillow.
+        <br />&nbsp;</li>
+    </ul>
+</div>
+<div>
+    <div class="content">
+        <h3 align="center">Community Number Forecast</h3>
+        <h4 align="left">Charge per Lead strategy attracts more communities:</h4>
+    </div>
+    <img src="community_estimate.png" alt="community number forecast" class="center"/>
+    <div class="content">
+        <p>
+            From the graph above, we get the following results:
+            <ur>
+                <li> For Pricing Option <i>Charge per lead</i>, there are estimated <b>24,701</b> communities on December 2018.</li>
+                <li> For Pricing Option <i>Flat price per community per month</i>, there are estimated <b>21,556</b> communities on December 2018.</li>
+            </ur>
+        </p>
+    </div>
+</div>
+<div>
+    <div class="content">
+        <h3 align="center">Revenue Impact</h3>
+        <h4>Charge per Lead strategy accrues more revenue in the long term:</h4>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="monthly_revenue.png" height="60%" width="100%" alt="monthly revenue forecast" />
+        </div>
+        <div class="column">
+            <img src="cumulative_revenue.png" height="60%" width="100%" alt="cumulative revenue forecast" />
+        </div>
+    </div>
+    <div class="content">
+        <p>
+            From the "Monthly Revenue" graph above, we see that flat rate charge per community per month strategy initially generates
+            more monthly revenue, but is projected to get surpassed by charge per lead strategy on <b><i>Jul, 2017</i></b>, where the monthly revenue is about <b><i>5.7 million</i></b> dollars.
+        </p>
+        <p>
+            From the "Cumulative Revenue" graph, we found out that flat rate princing strategy brings in more cumulative revenue until <b><i>Jul, 2018</i></b>. According to the estimate,
+            by December 2018, charge per lead strategy would have accrued additional <b><i>18.8 million dollars</i></b> for Zillow compared to the flat rate pricing strategy.
+        </p>
+    </div>
+
+</div>
+<div class="content">
+    <h3 align="center">Advantages and Drawbacks Comparison</h3>
+</div>
+<div class="tablecontent">
+    <table border="2" cellpadding="10">
+        <col width="5%">
+        <col width="45%">
+        <col width="45%">
+        <tr>
+            <th></th>
+            <th>Charge Per Lead Strategy</th>
+            <th>Flat Rate Strategy</th>
+        </tr>
+        <tr>
+            <td><b>Advantages</b></td>
+            <td align="left" valign="top">
+                <ol>
+                    <li>
+                        <b><i>Charge per Lead strategy renders a higher Month-over-Month community growth rate.</i></b>
+                        By end of 2018, Zillow is expected to list 24,700 new construction communities on the site, which is around 3,150 more than the Flat Rate strategy.
+                        More listings also provides better experience to the consumers.
+                    <br />&nbsp;</li>
+                    <li>
+                        <b><i>The new construction companies can perceive this paying structure as more cost effective.</i></b> Lead rate through Zillow is positively correlated with number of customers interested in the community,
+                        which results in more sales of the community properties. Builters can be more willing to pay after more sales, especially for smaller communites.
+                    <br />&nbsp;</li>
+                    <li>
+                        <b><i>Charge Per Lead strategy can also provide more incentives for Zillow to attract more consumers.</i></b> When revenues are tied with the number of consumers on Zillow contacting the builder,
+                        surely improved features and enhanced user experiences rank higher on the priority list.
+                    <br />&nbsp;</li>
+                    <li>
+                        As more consumers start using Zillow, <b><i>charge per lead strategy will accrue more revenues than the flat rate strategy.</i></b>
+                    </li>
+                </ol>
+            </td>
+            <td align="left" valign="top">
+                <ol>
+                    <li>
+                        <b><i>Flat Rate pricing strategy allows for stable and consistent revenue,</i></b> which is less likely to be majorly impacted by market volatility.
+                    <br />&nbsp;</li>
+                    <li>
+                        <b><i>Flat Rate strategy accrues higher monthly revenue when the lead rate is relatively low.</i></b>
+                    <br />&nbsp;</li>
+                    <li>
+                        <b><i>Larger communities will be more willing to list their properties</i></b> since the communities are paying the same amount every month regardless of leads through Zillow.
+                        This can potentially increase the number of options for users and improve their user experiences.
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Drawbacks</b></td>
+            <td align="left" valign="top">
+                <ol>
+                    <li>
+                        <b><i>This strategy brings limited amount of revenue when the average lead rate is low.</i></b>
+                    <br />&nbsp;</li>
+                    <li>
+                        <b><i>The revenue can get impacted hugely on the fluctuations of the markets and economy.</i></b> If the economy is relatively weak, much less people will be interested in searching and looking for homes, thus resulting in decreased revenues.
+                    <br />&nbsp;</li>
+                    <li>
+                        <b><i>If increasing lead numbers don't necessarily convert to increasing sales, communities will eventually become less willing to pay.</i></b>
+                    </li>
+                </ol>
+            </td>
+            <td align="left" valign="top">
+                <ol>
+                    <li>
+                        <b><i>Flat rate strategy will generate less revenues than pay per lead strategy</i></b> as Zillow continues to increas the lead per community rate.
+                    <br />&nbsp;</li>
+                    <li>
+                        <b><i>Communities with lower than average lead rates will be less likely to post listings on Zillow</i></b> as they would tend to think they are not getting good returns over the fixed amount of investments.
+                        This can especially hurt the smaller communities.
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="content">
+    <h3 align="center">Opportunities and Limitations</h3>
+    <p>
+        <b><i>The business opportunities for Zillow looks very promising:</i></b>
+    </p>
+    <p>
+        According to the US Census Bureau, from year 2015-2017, there are 1111.8, 1174.3, 1202.1 thousands of new units built, which is <b><i>3.5% average growth rate</i></b>.
+        Assume the average sizes of the communties stay the same, that means there will be roughly 41,500 total new construction communities for 2018.
+        That means there will be another 16,000(40%) communities that Zillow can win the business over.
+    </p>
+    <img src="private_home.png" alt="private_home" height="70%" width="60%" class="center"/>
+    <p>
+        In addition, the market research indicates that builters spend $3,500 on marketing on average per property, which means that if they spend all their marketing budgets on Zillow, it can afford them 87 leads.
+        Current average leads per community is much lower than 87, and that post opportunities for Zillow to offer features that compete with other marketing channels the communities spend their marketing budgets on.
+    </p>
+    <p>
+        <b><i>However, there are some limitations with current model implementation:</i></b>
+    </p>
+    <p>
+        <b><i>6% MoM growth rate is over 100% on annual growth</i></b>, which seems quite optimistic. In reality, the MoM growth rate can be lower especially when the economy and market is volatile and fluctuating.
+        Pricing strategy pick largely depends on the number of communities advertising on the site so a more realistic growth rate will be desirable.
+    </p>
+    <p>
+        <b><i>Consumer behaviors can vary largely depending on locations and seasons</i></b>. For example, at New York, much fewer people do home searches in winter compared to summer when the weather is snowy and cold.
+        On the other hand, consumers living in Florida with nice weather year round are probably affected less by the extreme weathers. Thus, with a general average MoM leads growth rate can impact the accuracy of our prediction.
+    </p>
+    <p>
+        <b><i>One community can have multiple types of units for sale, such as single-family house, townhomes, condos or apartments</i></b>. Different types of units will also be likely to have different range of prices.
+        For current charge per lead model, one rate doesn't reflect the potential economic return of each lead. If same amount of leads go through Zillow for a single-family house and a 1b1b apartment,
+        the builder will probably make more profit out of the single-family house but they will be paying the same amount of money under current charge per lead structure.
+    </p>
+</div>
+<div class="content">
+    <h3 align="center">Recommendations and Future Work</h3>
+    <ul>
+        <li>
+            From the data, we can see that Charge per Lead strategy brings more communities to Zillow and generates more revenues in the long-term. These are aligned with the key agreements that long-term revenue should be prioritized and more listings online provides consumers with better experience.
+            <b><i>Therefore, Charge per Lead is the optimal pricing strategy under this scenario.</i></b>
+        <br />&nbsp;</li>
+        <li>
+            <b><i>To make the analysis more robust, we should collect community data by region, unit types, price ranges and other features.</i></b>With community specific data, we can test how different communities respond to each pricing strategy and
+            test the feasibility of mixture pricing models. Consider the following: If we want to increase the number of listings on Zillow,
+            we can try to apply flat rate to communities with high lead rates and charge per lead to communities with low lead rates.
+            Vise versa if we want to increase the revenue. Which communities should we apply which strategy? Can we possibly find the right balance of combination of these two strategies? What are the effects of pricing rate change? These are interesting questions awaiting for future exploration.
+        <br />&nbsp; </li>
+        <li>
+            <b><i>We should also consider the possibility of creating price ladder for Charge per Lead strategy.</i></b> For communities with different types of units on sale, it would seem more reasonable to charge more for each lead on higher value properties. One of the benefits of doing this is that communiteis
+            will likely be willing to pay more for the leads that will potentially translate to greater profit for them, and thus they can be more open to parter with Zillow to put up their listings.
+        <br />&nbsp; </li>
+    </ul>
+</div>
